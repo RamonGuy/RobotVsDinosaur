@@ -28,5 +28,6 @@ class Battlefield:
 
     def run_game(self):
         self.display_welcome
-        self.battle_phase
+        while self.player1.health == 0 and self.player2.health == 0:
+            self.battle_phase
         self.display_winner
