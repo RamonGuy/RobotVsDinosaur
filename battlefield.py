@@ -1,6 +1,6 @@
 
 
-from robot import Robot
+from robot import Robot 
 from dinosaur import Dinosaur
 class Battlefield:
     def __init__(self) -> None:
@@ -10,12 +10,13 @@ class Battlefield:
 
 
     def display_welcome(self):
-     print("Hello to the RobotVsDinosaur Game")
+     print("Hello to the Robot-Vs-Dinosaur Game")
 
     def battle_phase(self):
-        self.player1.attack_dinosaur
-        self.player2.attack_robot
-        print('')
+            while self.player1.health > 0 and self.player2.health > 0:
+                self.player1.attack_dinosaur(Dinosaur())
+                self.player2.attack_robot(Robot())
+                print('')
 
 
     def display_winner(self):
@@ -27,7 +28,6 @@ class Battlefield:
             print("Sorry nobody won this time!!!")
 
     def run_game(self):
-        self.display_welcome
-        while self.player1.health == 0 and self.player2.health == 0:
-            self.battle_phase
-        self.display_winner
+        self.display_welcome()
+        self.battle_phase()
+        self.display_winner()

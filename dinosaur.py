@@ -5,9 +5,10 @@ class Dinosaur:
         self.name = 'Gasosaurus'
         self.attack_power = 20
         self.health = 100
+     
 
 
-    def attack_robot(self, robot):
-        self.attack_power -= robot.health
+    def attack_robot(self,robot):
+        robot.health -= self.attack_power
         print(f'{robot.health} is the Robots health')
     
