@@ -1,3 +1,5 @@
+
+
 class Dinosaur:
     def __init__(self) -> None:
         self.name = 'Gasosaurus'
@@ -5,6 +7,7 @@ class Dinosaur:
         self.health = 100
 
 
-def attack_robot(self, robot):
-    self.attack_power -= robot.health
-    print(robot.health)
+    def attack_robot(self, robot):
+        self.attack_power -= robot.health
+        print(f'{robot.health} Robots health')
+    
