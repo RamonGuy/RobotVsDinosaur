@@ -9,6 +9,6 @@ class Dinosaur:
 
 
     def attack_robot(self,robot):
-        robot.health -= self.attack_power
-        print(f'{robot.health} is the Robots health')
+        robot_health = robot.health - self.attack_power   
+        print(f'{robot_health} is the Robots health')
     

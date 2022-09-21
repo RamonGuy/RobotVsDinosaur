@@ -11,5 +11,5 @@ class Robot:
        
 
     def attack_dinosaur(self,dinosaur):
-        dinosaur.health -= self.active_weapon.attack_power
-        print(f'{dinosaur.health} is the dinosaurs health')
+        dinosaur_health = dinosaur.health - self.active_weapon.attack_power
+        print(f'{dinosaur_health} is the dinosaurs health')
